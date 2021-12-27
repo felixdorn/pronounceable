@@ -106,15 +106,15 @@ trigrams:
   ken: 1
 ```
 
-For each of these n-grams, we add the following to the score:
+For each of these n-grams, we compute their score.
 
 ```
 log(dataset[n][ngram] / len(dataset[n])) * (5+n)
 ```
 
-We multiply the score by 5 + n to reward longer n-grams proportionally to their length.
-
 Where `n` is the n-gram length and `dataset[n]` is the map of n-grams.
+
+> We multiply the score by `5 + n` to reward longer n-grams proportionally to their length.
 
 We can then calculate the score for a given word by summing the scores for each n-gram.
 
@@ -122,6 +122,6 @@ We can then calculate the score for a given word by summing the scores for each 
 sum(scores) / 1.5 * len(word)
 ```
 
-we multiply the score by 1.5 to penalize longer words.
+> We multiply the score by 1.5 to penalize longer words.
 
 **Pronounceable** was created by [@afelixdorn](https://twitter.com/afelixdorn) under the [MIT license](LICENSE).
