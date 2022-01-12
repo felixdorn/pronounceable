@@ -1,5 +1,7 @@
 # Pronounceable
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/felixdorn/pronounceable)](https://goreportcard.com/report/github.com/felixdorn/pronounceable)
+
 Pronounceable returns a score between 0 and 1 for how pronounceable a string is.
 
 ## Installation
