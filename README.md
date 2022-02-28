@@ -38,7 +38,7 @@ package main
 
 import "github.com/felixdorn/pronounceable"
 
-dataset := pronounceable.NewDataset("wordlist.txt")
+dataset, _ := pronounceable.NewDatasetFromFile("wordlist.txt")
 
 dataset.Score("incomprehensibilities") // ~0.66 with 100k words dataset
 dataset.Score("hello") // ~0.79 with 100k words dataset
