@@ -16,20 +16,17 @@ go get github.com/felixdorn/pronounceable
 
 > A dataset is just a list of words separated by newlines.
 
-We provide a few datasets of various size.
+We recommend you use the following:
 
-* [10k words](datasets/10k.txt)
-* [50k words](datasets/50k.txt)
-* [100k words](datasets/100k.txt) **(recommended)**
-* [333k words](datasets/333k.txt) (not recommended)
+* [100k words](datasets/100k.txt)
 
-You may download them to include in your project.
+You may download it to include in your project.
 
 ### Score Interpretation
 
 * `score > 0.6`: good
-* `0.5 > score < 0.6`: meh, it depends
-* `score < 0.5`: terrible
+* `0.5 > score < 0.6`: average
+* `score < 0.5`: bad
 
 Be aware that the larger the dataset, the higher the minimum score. See [how it works](#how-it-works).
 
